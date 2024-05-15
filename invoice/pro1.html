@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            font-family: Arial,  sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .invoice{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .header{
+            text-align: center;
+        }
+        .details{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .clint-info, .invoice-info{
+            flex: 1;
+        }
+        .invoice-table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .invoice-table th, .invoice-table td{
+         border: 1px solid #ccc;
+         padding: 8px;
+        }
+        .invoice-table th {
+           background-color: #f0f0f0;
+           text-align: left;
+        }
+        .text-right{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="class">
+        <div class="header">
+            <h1>invoice</h1>
+            <p>xxx Main Street</p>
+        </div>
+        <div class="details">
+            <div class="client-info">
+                <h2>client information </h2>
+                <p><strong>client name</strong> manish</p>
+                <p><strong>Email</strong> xxxxxjangid490@gmail.com</p>
+                <p><strong>Phone Number</strong> 90xxx898</p>
+            </div>
+            <div class="invoice-info">
+                <h2>invoice information</h2>
+                <p><strong>Invoice Number</strong>ins-78xxx</p>
+                <p><strong>Date</strong>may 11,2024</p>
+                <p><strong>Due Date</strong>june 24, 2024</p>
+            </div>
+            <div class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unite Price</th>
+                        <th>total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Service 1</td>
+                        <td>2</td>
+                        <td> $100</td>
+                        <td>$500</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right"><strong>subtotal:</strong></td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right"><strong>Tax (12%)</strong></td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right"><strong>Total</strong></td>
+                        <td>$330</td>
+                    </tr>
+                </tfoot>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

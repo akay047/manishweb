@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .left{
+        border-left: 5px solid black;
+    }
+    .right{
+        border-right: 5px solid black;
+    }
+    .top{
+        border-top: 5px solid black;
+    }
+    .bottom{
+        border-bottom: 5px solid black;
+    }
+    #box{
+        height: 300px;
+        width: 300px;
+        background-color: aliceblue;
+    }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="left_side()">Left Border</button>
+    <button onclick="right_side()">Right Border</button>
+    <button onclick="top_side()">Top Border</button>
+    <button onclick="bottom_side()">Bottom Border</button>
+
+    <script>
+        function left_side() {
+            box.style.borderLeft = "5px solid black"; 
+        }
+        function right_side() {
+            box.style.borderRight = "5px solid black";
+        }
+        function top_side() {
+            box.style.borderTop = "5px solid black";
+        }
+        function bottom_side() {
+            box.style.borderBottom = "5px solid black";
+        }
+    </script>
+</body>
+</html>

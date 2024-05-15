@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let height1=parseInt(prompt("Enter First Person Height : "));
+        let height2=parseInt(prompt("Enter Second Person Height : "));
+        let height3=parseInt(prompt("Enter Third Person Height : "));
+
+
+        if(height1>height2){
+            if(height1>height3){
+                document.write("First Person Height is greater : "+height1);
+            }else{
+                document.write("Third Person Height is greater : "+height3);
+            }
+        }else{
+            if(height2>height3){
+                document.write("Second Person Height is greater : "+height2);
+            }else{
+                document.write("Third Person Height is greater : "+height3);
+            }
+        }
+        
+    </script>
+</body>
+</html>
