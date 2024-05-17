@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 400px;
+            width: 400px;
+            background-color: orange;            
+        }
+    </style>
+</head>
+<body>
+    <div id="box">        
+    </div>
+    <button id="bttn">Click Here</button>
+    <script>
+        document.getElementById('bttn').addEventListener('click',()=>{            
+            document.getElementById('box').innerHTML='<img src="300-PA1050849.jpg" alt="" id="">';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 400px;
+            width: 400px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <img src="300-PA1050849.jpg" alt="" id=""> -->
+    <img src="300-PD1058235.jpg" alt="" id="myimg">
+    <button id="btnn">Click Here</button>
+
+    <script>
+        document.getElementById('btnn').addEventListener('click', () => {
+            let imgElem = document.getElementById('myimg');
+            imgElem.setAttribute('src','300-PA1050849.jpg');
+        });
+    </script>
+</body>
+
+</html>

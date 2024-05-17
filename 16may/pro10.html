@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(222, 78, 34);            
+        }
+    </style>
+</head>
+<body>
+    <div id="box">        
+    </div>
+    <button id="bttn">Click Here</button>
+    <script>
+        document.getElementById('bttn').addEventListener('click',()=>{            
+            document.getElementById('box').innerText="<h1>Hello user</h1>";
+        });
+    </script>
+</body>
+</html>
